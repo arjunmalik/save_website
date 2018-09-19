@@ -1,0 +1,26 @@
+.main-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  transition: all 1s ease;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-div {
+  display: inline-block;
+  width: 49vw;
+  height: 90vh;
+  cursor: url("/assets/cursors/left.png"), auto;
+  z-index: 2;
+}
+
+.right-div {
+  display: inline-block;
+  width: 49vw;
+  height: 90vh;
+  cursor: url("/assets/cursors/right.png"), auto;
+  z-index: 2;
+}

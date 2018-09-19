@@ -1,0 +1,37 @@
+.header-container{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  flex: 0 0 auto;
+}
+
+.header-container ul {
+  list-style-type: none;
+  display: flex!important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-container ul:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.header-container ul li a{
+  display: block;
+  background: #0d1317;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: color 0.5s ease;
+  background: transparent;
+}
+
+.header-container ul li a:hover {
+  color: #929aab;
+  background: transparent;
+  padding-left: 20px;
+}

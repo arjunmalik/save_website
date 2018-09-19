@@ -1,0 +1,15 @@
+<div class="main-div">
+  <div *ngFor="let url of imgArray; let i=index;">
+    <home-image [imgShift]="imgPos[i]" [srcImage] ="url"></home-image>
+  </div>
+   <div class ="left-div" (click)="leftImage()">
+  </div>
+  <div class ="right-div" (click)="rightImage()">
+  </div>
+   <!-- <ul class = "dot-container">
+    <li class=""></span>
+    <li class="dot" onClick="liClick(this)"></li>
+    <li class="dot" onClick="liClick(this)"></li>
+    <li class="dot" onClick="liClick(this)"></li>
+  </ul> -->
+</div>
