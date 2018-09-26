@@ -1,5 +1,5 @@
 export class ImageProvider {
-  imagesArray: [String] =
+  imagesArray: string[] =
   ['assets/images/ocean-hd-wallpapers-1.jpg',
    'assets/images/ocean-hd-wallpapers-2.jpg',
    'assets/images/ocean-hd-wallpapers-3.jpg',

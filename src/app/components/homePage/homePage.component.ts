@@ -7,7 +7,9 @@ import { ImageProvider } from '../../services/imageProvider.service';
   styleUrls: ['./homePage.component.css'],
 })
 export class HomePage {
-  imgPos: [number] = [];
+  imgPos: any[] = [];
+  imgArray: string[];
+  imgProvider: ImageProvider;
   posJustify: number;
   max: number;
   min: number;
@@ -16,7 +18,6 @@ export class HomePage {
     this.imgProvider = imgProvider;
     console.log('here'  +imgProvider);
   }
-  imgArray: [String];
   ngOnInit(){
     this.imgArray = this.imgProvider.imagesArray;
     let length = this.imgArray.length;

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ImageProvider } from '../../services/imageProvider.service';
+import { ImageProvider } from '../../../services/imageProvider.service';
 
 @Component({
   selector: 'home-image',
