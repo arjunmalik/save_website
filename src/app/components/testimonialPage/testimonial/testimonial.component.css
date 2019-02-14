@@ -1,0 +1,44 @@
+.testimonial-div {
+  margin: 10vh 5vw;
+  text-align: center;
+
+}
+
+.testimonial-header h1 {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.testimonial-content p {
+  margin-top: 5px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #5C6569
+}
+
+.testimonial-content h1 {
+  font-family: lato,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.testimonial-content h2 {
+  margin-top: 10px;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #903ce8;
+}
+
+.testimonial-image {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 20px auto;
+}

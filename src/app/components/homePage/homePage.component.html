@@ -2,14 +2,38 @@
   <div *ngFor="let url of imgArray; let i=index;">
     <home-image [imgShift]="imgPos[i]" [srcImage] ="url"></home-image>
   </div>
-   <div class ="left-div" (click)="leftImage()">
+   <div class ="left-div">
+   </div>
+
+  <div class ="right-div">
   </div>
-  <div class ="right-div" (click)="rightImage()">
+  <div class="enclosing-quote-container">
+    <div class = "quote-containner">
+      <p *ngFor="let quote of arrQuotes; let i=index;" class="para" [@currentImagePos]="quotesPos[i]">{{quote}}</p>
+    </div>
+    <div class = "quote-containner-2">
+      <p *ngFor="let quote of arrQuotes1; let i=index;" class="para" [@currentImagePos]="quotesPos1[i]">{{quote}}</p>
+    </div>
   </div>
-   <!-- <ul class = "dot-container">
-    <li class=""></span>
-    <li class="dot" onClick="liClick(this)"></li>
-    <li class="dot" onClick="liClick(this)"></li>
-    <li class="dot" onClick="liClick(this)"></li>
-  </ul> -->
+  <div class="enclossing-detail-container">
+    <div class = "detail-containner">
+      <p *ngFor="let quote of arrDetails; let i=index;" class="para-details" [@currentDetailsPos]="quotesPos[i]">{{quote}}</p>
+    </div>
+    <div class = "button-containner">
+      <div class = "know">
+        <a routerLink="/home">KNOW MORE</a>
+      </div>
+      <div class = "enroll">
+        <a routerLink="/home">ENROLL</a>
+      </div>
+    </div>
+    <div>
+      <ul class="enclosing-li-container">
+        <listIcon *ngFor="let quote of quotesPos; let i=index;"
+        [selected]="quote=='selected'"
+        class="li-style"
+        (click)="onLiSelect(i)"></listIcon>
+      </ul>
+    </div>
+  </div>
 </div>

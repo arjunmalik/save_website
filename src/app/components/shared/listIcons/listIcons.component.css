@@ -1,0 +1,14 @@
+.li-style {
+  width: 18px;
+  height: 18px;
+  display: block;
+  background: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.li-style:hover {
+  cursor: pointer;
+  background: grey;
+}

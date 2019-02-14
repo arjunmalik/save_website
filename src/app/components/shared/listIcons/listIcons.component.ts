@@ -7,5 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ListIcons {
   @Input() selected: boolean;
-  
+  ngOnChanges(changes) {
+    this.selected = changes.selected.currentValue;
+  }
 }

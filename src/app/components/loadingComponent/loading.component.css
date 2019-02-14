@@ -1,0 +1,51 @@
+ .first-div {
+   width: 100vw;
+   height: 35vh;
+ }
+
+ .second-div {
+   width: 100vw;
+   height: 30vh;
+   background: #eeeeee;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   direction: row;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+ }
+
+ .content {
+   height: 24px;
+   width: 100vw;
+   margin: 0 auto;
+   overflow: hidden;
+ }
+ .content p{
+   font-family: baskerville-display-pt, serif;
+   font-size: 20px;
+   font-weight: 400;
+   font-style: italic;
+   text-align: center;
+ }
+
+ .content::after{
+   content: '';
+   display: block;
+   position: absolute;
+   height: 70px;
+   width: 70px;
+   background: url('./assets/images/LoadingImage.jpg')center/cover no-repeat;
+   margin-left: auto;
+   margin-right: auto;
+   left:0;
+   right:0;
+   top: 25vh;
+   z-index: 2;
+ }
+
+ .third-div {
+   width: 100vw;
+   height: 35vh;
+ }

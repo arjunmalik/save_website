@@ -1,37 +1,97 @@
+@import url("https://use.typekit.net/llv8wek.css");
+
 .header-container{
   position: fixed;
   top: 0;
+  right: 0;
   width: 100%;
-  z-index: 10;
-  flex: 0 0 auto;
+  z-index: 12;
+  background: rgba(255,255,255,0.3);
 }
 
 .header-container ul {
   list-style-type: none;
   display: flex!important;
   flex-wrap: wrap;
-  justify-content: center;
+  background-color: transparent;
+  justify-content: space-around;
 }
 
-.header-container ul:hover {
-  background-color: rgba(0,0,0,0.8);
+
+.header-container ul li{
+  position: relative;
 }
 
 .header-container ul li a{
   display: block;
-  background: #0d1317;
-  padding: 20px;
-  font-size: 30px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  font-size: 20px;
+  font-family: fira-sans-2, sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  /*font-family: brandon-grotesque,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  transition: color 0.5s ease;
+  color: black;
+  /*transition: color 0.5s ease;*/
   background: transparent;
+  position: relative;
 }
 
 .header-container ul li a:hover {
-  color: #929aab;
-  background: transparent;
-  padding-left: 20px;
+  color: #f2f4fb;
+}
+
+.header-container ul li a:after {
+  content:"";
+  display: block;
+  margin-top: -5px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: all 0.5s ease;
+  border-bottom:2px solid #f2f4fb ;
+  width:100%;
+  transform: scaleX(0);
+  bottom: 15px;
+}
+
+.header-container ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+.image-container {
+  position: relative;
+}
+
+.header-img {
+  position: absolute;
+  left: 21%;
+  top: -50px;
+  z-index: 10;
+  height: 70px;
+  width: 70px;
+}
+
+.divider {
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.left-over {
+  width: 10%;
+}
+
+.circle {
+  position: relative;
+  left: 3.9%;
+  top: 68px;
+  height: 50px;
+  width: 120px;
+  border-radius: 50% / 0 0 100% 100%;
+  z-index: -1;
+  background-color: rgba(255,255,255,0.3);;
+}
+
+.active {
+  color: #f2f4fb !important;
 }

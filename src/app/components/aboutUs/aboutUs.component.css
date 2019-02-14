@@ -1,0 +1,113 @@
+.main-div2 {
+  position: relative;
+  top: 0vh;
+  height: 184vh;
+  width: 100vw;
+  background: #d5d0c2;
+  overflow-y: scroll;
+}
+
+.teamwork {
+  position: fixed;
+  width: 100vw;
+  height: 45vh;
+  top: 0vh;
+  background: url('https://image.ibb.co/hWOhc0/teamwork.jpg') center/cover no-repeat ;
+  filter: blur(0);
+  z-index: 10;
+}
+
+.main-div1 {
+  position: relative;
+  top: 50vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #8f8d87;
+  border-top: 2px solid #8f8d87;
+  width: 56vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.main-div3 {
+  position: relative;
+  top: 54vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #8f8d87;
+  width: 60vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.main-div3 .pic {
+  background: url('https://image.ibb.co/fdm2c0/Shivam.jpg') center/cover no-repeat ;
+}
+
+.main-div4 .pic {
+  background: url('https://image.ibb.co/k0Jtjf/Aman.jpg') center/cover no-repeat ;
+}
+
+.main-div4 {
+  position: relative;
+  top: 58vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #8f8d87;
+  width: 60vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.pic-div {
+  position: relative;
+  flex-grow: 1;
+  padding-right: 20px;
+  flex-basis: 40%;
+  max-width: 40%;
+}
+
+.pic {
+  position: absolute;
+  right: 7vw;
+  background: url('https://image.ibb.co/gCqRef/aa9f607a-6bd2-4f57-aa78-fe3560cdf440.jpg') center/cover no-repeat ;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.info-div {
+  position: relative;
+  flex-grow: 3;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.info-div h1 {
+  font-family: vinyl, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #4a4b4c;
+}
+
+.info-div p {
+  margin-bottom: 20px;
+  font-size: 19px;
+  color: #4a4b4c;
+}
+
+.info-div .email {
+  text-decoration: underline;
+  font-style: italic;
+  text-transform: lowercase;
+}

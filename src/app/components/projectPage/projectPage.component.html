@@ -1,1 +1,20 @@
-<div class='projectDiv'> </div>
+<div class='background-div' #bg>
+</div>
+<div class='main-div'>
+  <div class='enclosing-div' #enclosing>
+    <ul class="enclosing-li-container">
+      <listIcon *ngFor="let s of selected; let i=index;"
+      [selected]="s==true"
+      class="li-style"
+      (click)="onLiSelect(i)"></listIcon>
+    </ul>
+    <div class='first-div' #first>
+    </div>
+    <div class='second-div1' #second> </div>
+    <div class='third-div'>
+      <div class='embed-div'>
+        <p #quote *ngFor='let q of quotes'>{{q}}</p>
+      </div>
+    </div>
+  </div>
+</div>
